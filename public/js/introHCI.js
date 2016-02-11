@@ -53,7 +53,7 @@ function randomizeColors(e) {
 
 function changePalette(result){
 	console.log(result);
-	var colors = result['colors']['hex'];
+	var colors = result.colors.hex;
 
 	$('body').css('background-color', colors[0]);
 	$('.thumbnail').css('background-color', colors[1]);
