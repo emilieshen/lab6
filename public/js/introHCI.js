@@ -33,13 +33,12 @@ function addProjectDetails(e) {
 }
 
 function addProject(result){
-	console.log(result);
-	var projectHTML ='<a href="#" class="thumbnail">' +
-		'<img src="' + result['image'] + '"class="img">' +
-		'<p>' + result['title'] + '</p>' +
-		'<p><small>' + result['date'] + '</small></p></a>';
+	var projectHTML ="<h4>" + result['title'] + "</h4>" + '<a href="#" class="thumbnail">' +
+		'<img src="' + result['image'] + '"class="detailsImage">' +
+		'<p><small>' + result['date'] + '</small></p></a>' +
+		'<p><small>' + result['summary'] + '</small></p></a>';
 
-	$("#project" + result['id'] + '.details').html(projectHTML + result['summary']);
+	$("#project" + result['id']).html(projectHTML);
 }
 
 /*
